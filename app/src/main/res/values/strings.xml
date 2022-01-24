@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RockPaperScissors</string>
+    <string name="tv_rock_paper_scissor">ROCK PAPER SCISSOR</string>
+    <string name="tv_player">PLAYER</string>
+    <string name="tv_com">COM</string>
+    <string name="text_draw">DRAW</string>
+    <string name="text_player_win">YOU WIN</string>
+    <string name="text_com_win">COM WIN</string>
+    <string name="text_vs">VS</string>
+</resources>

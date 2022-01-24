@@ -102,10 +102,11 @@ class MainActivity : AppCompatActivity() {
         user.heroes.forEachIndexed { index, hero ->
             hero.setOnClickListener {
                 if (!isGameFinished) {
-                    Log.i(TAG, "setClickListeners : ${PlayerChoice.getValueFromIndex(index)}")
+                    Log.d(TAG, "setClickListeners : ${PlayerChoice.getValueFromIndex(index)}")
                     user.choice = index
                     it.background = ContextCompat.getDrawable(this, R.drawable.img_select)
                     computer.choice = (0..2).random()
+                    Log.d(TAG, "setClickListeners : ${computer.choice}")
                     computer.heroes[computer.choice].background =
                         ContextCompat.getDrawable(this, R.drawable.img_select)
                     decideWinner()
@@ -122,15 +123,15 @@ class MainActivity : AppCompatActivity() {
     private fun decideWinner() {
         when {
             (user.choice + 1) % 3 == computer.choice -> {
-                Log.i(TAG, "decideWinner: Player 2 Win")
+                Log.d(TAG, "decideWinner: Player 2 Win")
                 binding.tvStatusGame.text = getString(R.string.text_com_win)
             }
             user.choice == computer.choice -> {
-                Log.i(TAG, "decideWinner: Draw")
+                Log.d(TAG, "decideWinner: Draw")
                 binding.tvStatusGame.text = getString(R.string.text_draw)
             }
             else -> {
-                Log.i(TAG, "decideWinner: Player 1 Win")
+                Log.d(TAG, "decideWinner: Player 1 Win")
                 binding.tvStatusGame.text = getString(R.string.text_player_win)
             }
         }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.game.MainActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -13,11 +13,21 @@
         android:src="@drawable/bg_game"
         tools:ignore="ContentDescription" />
 
+    <ImageView
+        android:id="@+id/iv_exit_game"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/ic_close_game"
+        android:layout_margin="@dimen/_5sdp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
     <TextView
         android:id="@+id/tv_title"
         style="@style/Text.32.White"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_80sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:padding="@dimen/_16sdp"
         android:gravity="center"
         android:text="@string/tv_rock_paper_scissor"
         android:textSize="@dimen/_30ssp"
@@ -41,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="@string/tv_player"
+            tools:text="PLAYER"
             android:textSize="@dimen/_20ssp" />
 
         <ImageView
@@ -50,7 +60,7 @@
             android:layout_height="@dimen/_100sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_8sdp"
-            tools:src="@drawable/ic_rock"
+            android:src="@drawable/ic_rock"
             tools:ignore="ContentDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -61,7 +71,7 @@
             android:layout_height="@dimen/_100sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_8sdp"
-            tools:src="@drawable/ic_paper"
+            android:src="@drawable/ic_paper"
             tools:ignore="ContentDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_choice_left_0"/>
@@ -72,7 +82,7 @@
             android:layout_height="@dimen/_100sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_8sdp"
-            tools:src="@drawable/ic_scissors"
+            android:src="@drawable/ic_scissor"
             tools:ignore="ContentDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_choice_left_1"/>
@@ -86,21 +96,10 @@
         android:gravity="center"
         tools:text="VS"
         android:textSize="@dimen/_50ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_refresh"
         app:layout_constraintLeft_toLeftOf="@id/ll_player_left"
         app:layout_constraintRight_toRightOf="@id/ll_player_right"
         app:layout_constraintTop_toBottomOf="@id/tv_title" />
-
-    <TextView
-        android:id="@+id/tv_status_game"
-        style="@style/Text.32.White"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/tv_vs"
-        app:layout_constraintLeft_toLeftOf="@id/ll_player_left"
-        app:layout_constraintRight_toRightOf="@id/ll_player_right"
-        app:layout_constraintTop_toBottomOf="@id/tv_title"
-        tools:text="PLAYER WIN" />
 
 
     <LinearLayout
@@ -119,7 +118,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:text="@string/tv_com"
+            tools:text="@string/tv_com"
             android:textSize="@dimen/_20ssp" />
 
         <ImageView
@@ -128,7 +127,7 @@
             android:layout_height="@dimen/_100sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_8sdp"
-            tools:src="@drawable/ic_rock"
+            android:src="@drawable/ic_rock"
             tools:ignore="ContentDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -139,7 +138,7 @@
             android:layout_height="@dimen/_100sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_8sdp"
-            tools:src="@drawable/ic_paper"
+            android:src="@drawable/ic_paper"
             tools:ignore="ContentDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_choice_right_0"/>
@@ -151,7 +150,7 @@
             android:layout_height="@dimen/_100sdp"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_8sdp"
-            tools:src="@drawable/ic_scissors"
+            android:src="@drawable/ic_scissor"
             tools:ignore="ContentDescription"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/iv_choice_right_1"/>

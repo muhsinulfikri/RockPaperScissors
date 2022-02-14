@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/layout/activity_main.xml" value="0.1638888888888889" />
+        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/drawable/bg_rounded_rad_16.xml" value="0.1" />
+        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/layout/activity_intro.xml" value="0.14814814814814814" />
+        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/layout/activity_landing_page.xml" value="0.22447916666666667" />
+        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/layout/activity_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/layout/activity_splash_screen.xml" value="0.22447916666666667" />
+        <entry key="..\:/Binar-Android-Project/RockPaperScissors/app/src/main/res/layout/fragment_landing_page.xml" value="0.22447916666666667" />
       </map>
     </option>
   </component>

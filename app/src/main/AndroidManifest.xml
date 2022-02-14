@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.rockpaperscissors">
 
     <application
@@ -10,8 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RockPaperScissors">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ui.menu.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.intro.LandingPageFragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".ui.intro.IntroActivity" />
+        <activity
+            android:name=".ui.game.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splashscreen.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.intro.LandingPageFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_intro"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/iv_landing_page_one"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginBottom="@dimen/_24sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_landing_page_title"
+        app:layout_constraintBottom_toTopOf="@id/til_input_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/ic_landing_page_three"/>
+    <TextView
+        android:id="@+id/tv_landing_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_16sdp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@string/text_title_menu"
+        android:gravity="center_horizontal"
+        style="@style/Text.32.White"/>
+    <TextView
+        android:id="@+id/tv_desc_game"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_landing_page_one"
+        tools:text="@string/enter_name"
+        style="@style/Text.32.White"
+        android:textSize="@dimen/_18sdp"
+        android:textAlignment="center"
+        android:padding="@dimen/_15sdp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_desc_game"
+        android:hint="Your Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        tools:visibility="visible">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_player_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_rad_16"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

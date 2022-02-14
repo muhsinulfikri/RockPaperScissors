@@ -1,10 +1,31 @@
 <resources>
     <string name="app_name">RockPaperScissors</string>
-    <string name="tv_rock_paper_scissor">ROCK PAPER SCISSOR</string>
-    <string name="tv_player">PLAYER</string>
+    <string name="tv_rock_paper_scissor">ROCK \n PAPER SCISSOR</string>
+    <string name="tv_player">%s</string>
     <string name="tv_com">COM</string>
     <string name="text_draw">DRAW</string>
-    <string name="text_player_win">YOU WIN</string>
-    <string name="text_com_win">COM WIN</string>
+    <string name="text_player_win">%s WIN</string>
+    <string name="text_player_lose">%s LOSE</string>
     <string name="text_vs">VS</string>
+    <string name="text_play_with_friend">PLAY WITH FRIEND</string>
+    <string name="play_with_com">PLAY WITH COMPUTER</string>
+    <string name="enter_name">ENTER YOUR NAME</string>
+    <string name="text_title_menu">Hi %s ! \n Choose One Do You Wanna Play !</string>
+    <string name="text_player_opponent">PLAYER</string>
+    <string name="text_dialog_message">Do You Wanna Play Again ?</string>
+    <string name="text_dialog_yes">Yes</string>
+    <string name="text_dialog_menu">Menu</string>
+    <string name="text_toast_input_name">Please Input Your Name !</string>
+    <string name="text_desc_play_with_friend">You Can Play Game With Your Friend</string>
+    <string name="text_desc_play_with_computer">If You Lonely, You Can Still Play with Computer</string>
+    <string name="text_toast_player_1_rock">%s : Rock</string>
+    <string name="text_toast_player_1_paper">%s : Paper</string>
+    <string name="text_toast_player_1_scissor">%s : Scissor</string>
+    <string name="text_toast_player_2_rock">Player 2 : Rock</string>
+    <string name="text_toast_player_2_paper">Player 2 : Paper</string>
+    <string name="text_toast_player_2_scissor">Player 2 : Scissor</string>
+    <string name="text_toast_com_rock">Com : Rock</string>
+    <string name="text_toast_com_paper">Com : Paper</string>
+    <string name="text_toast_com_scissor">Com : Scissor</string>
+    <string name="text_snackbar_close">close</string>
 </resources>

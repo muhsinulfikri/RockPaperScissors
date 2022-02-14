@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_menu_2"
+    tools:context=".ui.menu.MenuActivity">
+
+
+    <TextView
+        android:id="@+id/tv_choose_to_play"
+        android:padding="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/_20ssp"
+        style="@style/Text.32.White"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="HI WKWK! WHICH ONE DO YOU WANNA PLAY"/>
+
+    <ImageView
+        android:id="@+id/iv_player_vs_player"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_choose_to_play"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_landing_page_one" />
+
+    <TextView
+        android:id="@+id/tv_vs_player"
+        android:paddingTop="@dimen/_10sdp"
+        android:textAlignment="center"
+        style="@style/Text.32.White"
+        android:textSize="@dimen/_20ssp"
+        android:text="PLAYER VS PLAYER"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_player_vs_player" />
+
+    <ImageView
+        android:id="@+id/iv_player_vs_com"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/tv_vs_player"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_landing_page_two" />
+
+    <TextView
+        android:id="@+id/tv_vs_com"
+        android:paddingTop="@dimen/_10sdp"
+        android:textAlignment="center"
+        style="@style/Text.32.Black"
+        android:textSize="@dimen/_20ssp"
+        android:text="PLAYER VS COM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_player_vs_com" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
